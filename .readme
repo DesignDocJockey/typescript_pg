@@ -1,0 +1,43 @@
+----------Getting Started with TypeScript-----------------
+TypeScript needs to be transpiled into JavaScript
+To be able to debug TypeScript in the browser, we need to create a source map
+    --The source map maps the transpiled javascript into the TypeScript source
+
+--Install TypeScript Globally via npm
+->npm install typescript -g
+
+--To create the source map, we use the tsc command installed from TypeScript
+->tsc --sourceMap true [yourTypeScriptFile.ts]
+
+--To compile typescript code into javascript, we typescript
+->tsc [yourTypeScriptFile.ts]
+
+--Install TSLint for VSCode 
+--Install TSLint Globally via npm
+->npm install tslint -g
+
+TSLint keeps coding for typescript clean 
+-It uses a tslint.json file to hold all the linting rules
+
+---Configure Grunt for TypeScript ---------
+--Install Grunt via
+->npm install grunt grunt-ts grunt-tslint tslint typescript --save-dev
+
+Run by typing in grunt in the terminal to compile
+->grunt
+
+----Jasmine--------------------------------
+Behavior driven testing framework
+Install Jasmine via npm
+->npm install jasmine -g
+
+jasmine configuration settings are stored in a jasmin.json file stored in a spec/support directory
+to create a jasmine file, enter: jasmine init
+->jasmine init 
+
+Create a Suite and Specs
+Suite -- A suite defines what is being tested i.e. unit tests
+Specs -- contains expectations and assertions that are true or false
+
+To run unit tests in jasmine type in 
+->jasmine

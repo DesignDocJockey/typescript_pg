@@ -1,0 +1,11 @@
+{
+    "rules": {
+        "only-arrow-functions": true
+    }
+}
+
+/*
+  "extends": [
+        "tslint:recommended"
+    ],
+*/
