@@ -1,19 +1,16 @@
 "use strict";
-exports.__esModule = true;
-var Product = /** @class */ (function () {
-    function Product(name, price) {
+Object.defineProperty(exports, "__esModule", { value: true });
+class Product {
+    constructor(name, price, isbn) {
         this.name = name;
         this.price = price;
+        this.isbn = isbn;
     }
-    Product.prototype.getName = function () {
-        return this.name;
-    };
-    Product.prototype.getPrice = function () {
-        return this.price;
-    };
-    Product.prototype.getDiscountedPrice = function (discount) {
+    getName() { return this.name; }
+    getPrice() { return this.price; }
+    getDiscountedPrice(discount) {
         return this.price - (this.price * discount / 100);
-    };
-    return Product;
-}());
+    }
+    getISBN() { return this.isbn; }
+}
 exports.Product = Product;

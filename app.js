@@ -1,5 +1,5 @@
-var greet = function (name) {
-    return "Hello " + name + "!";
+"use strict";
+var greet = (name) => {
+    return `Hello ${name}!`;
 };
 console.log(greet('Happy Easter'));
-//# sourceMappingURL=app.js.map

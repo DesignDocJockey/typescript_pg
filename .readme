@@ -1,18 +1,24 @@
 ----------Getting Started with TypeScript-----------------
+You can create a package.json file off of the package-lock.json by typing in 
+->npm init --y
+
 TypeScript needs to be transpiled into JavaScript
 To be able to debug TypeScript in the browser, we need to create a source map
     --The source map maps the transpiled javascript into the TypeScript source
 
---Install TypeScript Globally via npm
+Install TypeScript Globally via npm
 ->npm install typescript -g
 
---To create the source map, we use the tsc command installed from TypeScript
+Generate a tsconfig.json file to hold the TypeScript compilation/transpilation/build settings
+-->tsc --init 
+
+To create the source map, we use the tsc command installed from TypeScript
 ->tsc --sourceMap true [yourTypeScriptFile.ts]
 
---To compile typescript code into javascript, we typescript
+To compile typescript code into javascript, we typescript
 ->tsc [yourTypeScriptFile.ts]
 
---Install TSLint for VSCode 
+Install TSLint for VSCode 
 --Install TSLint Globally via npm
 ->npm install tslint -g
 
@@ -20,7 +26,7 @@ TSLint keeps coding for typescript clean
 -It uses a tslint.json file to hold all the linting rules
 
 ---Configure Grunt for TypeScript ---------
---Install Grunt via
+Install Grunt via
 ->npm install grunt grunt-ts grunt-tslint tslint typescript --save-dev
 
 Run by typing in grunt in the terminal to compile
