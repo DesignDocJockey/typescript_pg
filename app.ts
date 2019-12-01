@@ -2,4 +2,4 @@
     return `Hello ${name}!`;
 }
 
-console.log(greet('Happy Easter'));
+console.log(greet('Happy Holidays!!'));
