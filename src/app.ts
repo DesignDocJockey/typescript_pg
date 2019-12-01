@@ -1,7 +1,4 @@
 import * as socketio from "socket.io";
-
- var greet = (name:string): string => {
-    return `Hello ${name}!`;
-}
+import { greet } from './Utilities/Utilities';
 
 console.log(greet('Happy Holidays!!'));

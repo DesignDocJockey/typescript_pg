@@ -2,7 +2,7 @@
   "name": "typescript_dev",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "./src/app.ts",
   "dependencies": {
     "express": "^4.17.1",
     "grunt": "^1.0.2",
