@@ -1,3 +1,5 @@
+'use strict';
+
 export class Product 
 {
     private name: string;
@@ -15,7 +17,7 @@ export class Product
     getPrice(): number { return this.price; }
 
     getDiscountedPrice(discount: number): number {
-            return this.price - (this.price * discount / 100);
+        return this.price - (this.price * discount / 100);
     }
 
     getISBN():string { return this.isbn;}
